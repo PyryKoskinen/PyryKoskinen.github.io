@@ -1,6 +1,7 @@
 /* Sivun taustaväri */
 body {
     background-color: powderblue;
+    font-family: "Times New Roman", Georgia, serif;
 }
 
 /* Otsikon ja kappaleen värit */
@@ -44,3 +45,4 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
