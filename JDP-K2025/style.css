@@ -314,7 +314,7 @@ h1 {
     text-align: center;
     color: white;
     overflow: hidden; /* Varmistaa, että kuva ei vuoda ulos */
-    height: 80vh; /* Pienennetään hero-osan korkeutta */
+    height: 40vh; /* Pienennetään hero-osan korkeutta */
     display: flex;
     flex-direction: column; /* Asetetaan sisältö pystysuoraan */
     align-items: center;
