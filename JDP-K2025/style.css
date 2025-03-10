@@ -313,11 +313,13 @@ h1 {
     text-align: center;
     color: white;
     overflow: hidden; /* Varmistaa, että kuva ei vuoda ulos */
-    height: calc(100vh - 100px); /* Vähennä footerin korkeus */
+    height: 100vh; /* Hero-osan korkeus kattaa koko näytön */
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%; /* Varmistaa, että hero-osa täyttää koko leveyden */
+    margin: 0; /* Poistaa marginaalit */
+    padding: 0; /* Poistaa paddingin */
 }
 
 .hero-image {
@@ -341,6 +343,7 @@ h1 {
     border-radius: 10px; /* Pyöristetyt kulmat */
     text-align: center; /* Varmistaa, että teksti on keskitetty */
     width: 100%; /* Varmistaa, että teksti täyttää hero-osan leveyden */
+    margin: 0; /* Poistaa marginaalit */
 }
 
 .hero-link {
@@ -356,12 +359,6 @@ h1 {
 @media (max-width: 768px) {
     .hero-text {
         font-size: 2em; /* Pienempi fonttikoko mobiililaitteilla */
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-text {
-        font-size: 1.5em; /* Vielä pienempi fonttikoko hyvin pienillä näytöillä */
     }
 }
 
