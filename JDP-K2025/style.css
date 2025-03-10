@@ -248,6 +248,55 @@ h2 {
 .varaa-btn:hover {
     background-color: #FFB833;
 }
+/* Responsiivisuus mobiililaitteille */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; 
+        margin: 20px auto; 
+        padding: 15px; 
+        gap: 15px; 
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        padding: 20px; 
+    }
+
+    .contact-info h3, .contact-form h2 {
+        font-size: 20px; 
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        padding: 10px; 
+    }
+
+    .submit-btn {
+        padding: 10px 15px; 
+        font-size: 14px; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    nav ul li a {
+        padding: 10px 20px; 
+    }
+
+    .nav-logo {
+        width: 70px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    p {
+        max-width: 90%;
+    }
+}
 
 a {
     text-decoration: none;
@@ -261,13 +310,13 @@ h1 {
     position: relative;
     text-align: center;
     color: white;
-    overflow: hidden; /* Varmistaa, että kuva ei vuoda ulos */
+    overflow: hidden; 
 }
 
 .hero-image {
     width: 150%;
-    height: 100vh; /* Kattaa koko näytön korkeuden */
-    object-fit: cover; /* Varmistaa, että kuva täyttää alueen */
+    height: 100vh; 
+    object-fit: cover;
 }
 
 .hero-text {
@@ -278,13 +327,13 @@ h1 {
     font-size: 2.5em;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    white-space: nowrap; /* Estää tekstin rivittäytymisen */
+    white-space: nowrap; 
 }
 
 /* Responsiivisuus pienemmillä näytöillä */
 @media (max-width: 768px) {
     .hero-text {
-        font-size: 2em; /* Pienempi fonttikoko mobiililaitteilla */
+        font-size: 2em; 
     }
 }
 
@@ -292,62 +341,4 @@ h3 {
     text-align: center !important;
     font-size: 32px;
 }
-/* Responsiivisuus mobiililaitteille */
-@media (max-width: 768px) {
-    /* Pienennä kontainerin marginaaleja ja paddingia */
-    .contact-container {
-        flex-direction: column; /* Asetetaan sisältö pystysuoraan */
-        margin: 20px auto; /* Pienennetty marginaali */
-        padding: 15px; /* Pienennetty padding */
-        gap: 15px; /* Pienennetty väli elementtien välillä */
-    }
 
-    /* Yhteystiedot ja lomake täyttävät leveyden */
-    .contact-info, .contact-form {
-        width: 100%; /* Täysi leveys */
-        padding: 20px; /* Tasapainotettu padding */
-    }
-
-    /* Pienennä fonttikokoa otsikoille */
-    .contact-info h3, .contact-form h2 {
-        font-size: 20px; /* Pienennetty otsikon koko */
-    }
-
-    /* Pienennä lomakkeen kenttien paddingia */
-    input[type="text"], input[type="email"], textarea {
-        padding: 10px; /* Pienennetty padding */
-    }
-
-    /* Pienennä Lähetä-painikkeen kokoa */
-    .submit-btn {
-        padding: 10px 15px; /* Pienennetty padding */
-        font-size: 14px; /* Pienennetty fonttikoko */
-    }
-
-    /* Navigaatio pystysuuntaiseksi mobiililaitteilla */
-    nav ul {
-        flex-direction: column; /* Asetetaan pystysuuntaiseksi */
-        gap: 10px; /* Pienennetty väli */
-    }
-
-    /* Pienennä navigaatiopainikkeiden paddingia */
-    nav ul li a {
-        padding: 10px 20px; /* Pienennetty padding */
-    }
-
-    /* Pienennä logon kokoa */
-    .nav-logo {
-        width: 70px; /* Pienennetty koko */
-    }
-
-    /* Kuvat skaalautuvat täysin leveälle */
-    img {
-        max-width: 100%; /* Kuvat täyttävät näytön leveyden */
-        height: auto; /* Säilytetään kuvasuhteet */
-    }
-
-    /* Pienennä tekstin maksimileveyttä */
-    p {
-        max-width: 90%; /* Teksti ei ole liian leveä */
-    }
-}
