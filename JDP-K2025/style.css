@@ -322,14 +322,14 @@ h1 {
     width: 100%; /* Varmistaa, että hero-osa täyttää koko leveyden */
     margin: 0; /* Poistaa marginaalit */
     padding: 0; /* Poistaa paddingin */
-    padding-top: 20px; /* Lisää tilaa sivuston yläreunan ja kuvan väliin */
+    padding-top: 10px; /* Lisää tilaa sivuston yläreunan ja kuvan väliin */
 }
 
 .hero-image {
-    max-width: 80%; /* Kuva ei ylitä hero-osan leveyttä */
-    max-height: 40%; /* Kuva ei ylitä tiettyä korkeutta */
+    max-width: 100%; /* Kuva ei ylitä hero-osan leveyttä */
+    max-height: 60%; /* Kuva ei ylitä tiettyä korkeutta */
     object-fit: contain; /* Säilyttää kuvan mittasuhteet eikä täytä aluetta */
-    margin-bottom: 20px; /* Lisää tilaa kuvan ja tekstin väliin */
+    margin-bottom: 10px; /* Lisää tilaa kuvan ja tekstin väliin */
 }
 
 .hero-text {
@@ -338,11 +338,11 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative; /* Teksti on nyt hero-osan sisällä eikä mene kuvan yli */
     z-index: 1; /* Varmistaa, että teksti on kuvan päällä */
-    padding: 10px; /* Pienempi padding */
+    padding: 5px; /* Pienempi padding */
     background-color: rgba(0, 0, 0, 0.4); /* Vähemmän tumma tausta */
     border-radius: 10px; /* Pyöristetyt kulmat */
     text-align: center; /* Varmistaa, että teksti on keskitetty */
-    width: 80%; /* Pienempi leveys */
+    width: 50%; /* Pienempi leveys */
     max-height: 100px; /* Rajoittaa korkeutta */
     overflow: hidden;
 }
