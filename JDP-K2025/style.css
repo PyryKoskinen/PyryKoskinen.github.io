@@ -33,17 +33,17 @@ body {
     border-radius: 5px;
 }
 
-.contact-info h2 {
+.contact-info h3 {
     font-size: 24px;
     margin-bottom: 10px;
     text-align: left;
 }
 
 .contact-info p {
-    text-align: left; /* Palautetaan vasemmalle */
+    text-align: left;
     margin-left: 0;
     margin-right: 0;
-    max-width: 100%; /* Poistetaan turha rajoitus */
+    max-width: 100%; 
 }
 
 /* Lomake oikealla */
@@ -60,10 +60,10 @@ body {
     text-align: left;
 }
 .contact-form p {
-    text-align: left; /* Palautetaan vasemmalle */
+    text-align: left; 
     margin-left: 0;
     margin-right: 0;
-    max-width: 100%; /* Poistetaan turha rajoitus */
+    max-width: 100%; 
 }
 
 /* Lomakekentät */
