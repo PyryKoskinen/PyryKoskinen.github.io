@@ -282,3 +282,7 @@ h1 {
         font-size: 2em; /* Pienempi fonttikoko mobiililaitteilla */
     }
 }
+h3 {
+    text-align: center;
+    font-size: 32px;
+}
