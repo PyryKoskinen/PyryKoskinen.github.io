@@ -305,6 +305,7 @@ a {
 h1 {
     text-align: center;
     font-size: 32px;
+    margin-bottom: 20px; /* Lisää tilaa otsikon ja kuvan väliin */
 }
 
 /* Hero-osan tyylit */
@@ -317,10 +318,11 @@ h1 {
     display: flex;
     flex-direction: column; /* Asetetaan sisältö pystysuoraan */
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Siirtää sisällön ylös */
     width: 100%; /* Varmistaa, että hero-osa täyttää koko leveyden */
     margin: 0; /* Poistaa marginaalit */
     padding: 0; /* Poistaa paddingin */
+    padding-top: 20px; /* Lisää tilaa sivuston yläreunan ja kuvan väliin */
 }
 
 .hero-image {
@@ -340,8 +342,9 @@ h1 {
     background-color: rgba(0, 0, 0, 0.5); /* Lisää taustan tekstin luettavuuden parantamiseksi */
     border-radius: 10px; /* Pyöristetyt kulmat */
     text-align: center; /* Varmistaa, että teksti on keskitetty */
-    width: 50%; /* Varmistaa, että teksti täyttää hero-osan leveyden */
+    width: 100%; /* Varmistaa, että teksti täyttää hero-osan leveyden */
     margin: 0; /* Poistaa marginaalit */
+    margin-top: 20px; /* Lisää tilaa kuvan ja tekstin väliin */
 }
 
 .hero-link {
