@@ -212,13 +212,9 @@ img { /*määritetään kuville maksimi koko ja asetetaan kuva keskelle sivustoa
 
 
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   img {
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto 10px auto;
+    max-width: 100%;
   }
 }
 p { /*Asetetaan elementti keskelle ruutua ja elementin leveys on 60% sivusta*/
