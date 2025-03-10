@@ -240,15 +240,4 @@ h2 { /*sama kun h1*/
 a {
     text-decoration: none;
 }
-.hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-image: url('airplane.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Pitää kuvan paikallaan skrollatessa */
-    z-index: -1; /* Vie kuvan taakse, jotta muut elementit näkyvät */
-}
+
