@@ -330,6 +330,8 @@ h1 {
     top: 0;
     left: 0;
     z-index: -1; /* Asetetaan kuva taustalle */
+    transform: translateX(-50%); /* Keskitetään kuva vaakasuunnassa */
+    left: 50%; /* Keskitetään kuva vaakasuunnassa */
 }
 
 .hero-text {
@@ -362,6 +364,11 @@ h1 {
     }
 }
 
+@media (max-width: 480px) {
+    .hero-text {
+        font-size: 1.5em; /* Vielä pienempi fonttikoko hyvin pienillä näytöillä */
+    }
+}
 
 h4 {
     text-align: center !important;
