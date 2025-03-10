@@ -323,15 +323,14 @@ h1 {
 }
 
 .hero-image {
-    width: 100%; /* Täyttää koko hero-osan leveyden */
-    height: 100%; /* Täyttää koko hero-osan korkeuden */
-    object-fit: cover; /* Varmistaa, että kuva täyttää alueen */
+    max-width: 100%; /* Kuva ei ylitä hero-osan leveyttä */
+    max-height: 100%; /* Kuva ei ylitä hero-osan korkeutta */
+    object-fit: contain; /* Säilyttää kuvan mittasuhteet eikä täytä aluetta */
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%; /* Siirtää kuvan alkuperäisen sijainnin yläreunan keskelle */
+    left: 50%; /* Siirtää kuvan alkuperäisen sijainnin vasemman reunan keskelle */
+    transform: translate(-50%, -50%); /* Keskitetään kuva */
     z-index: -1; /* Asetetaan kuva taustalle */
-    transform: translateX(-50%); /* Keskitetään kuva vaakasuunnassa */
-    left: 50%; /* Keskitetään kuva vaakasuunnassa */
 }
 
 .hero-text {
@@ -369,7 +368,6 @@ h1 {
         font-size: 1.5em; /* Vielä pienempi fonttikoko hyvin pienillä näytöillä */
     }
 }
-
 h4 {
     text-align: center !important;
     font-size: 32px;
