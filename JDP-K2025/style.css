@@ -302,10 +302,10 @@ a {
     text-decoration: none;
 }
 /* Otsikon tyylit */
-/* Otsikon tyylit */
 h1 {
     text-align: center;
     font-size: 32px;
+    margin-bottom: 20px; /* Lisää tilaa otsikon ja kuvan väliin */
 }
 
 /* Hero-osan tyylit */
@@ -325,10 +325,10 @@ h1 {
 }
 
 .hero-image {
-    max-width: 100%; /* Kuva ei ylitä hero-osan leveyttä */
-    max-height: 60%; /* Kuva ei ylitä tiettyä korkeutta */
+    max-width: 80%; /* Kuva ei ylitä hero-osan leveyttä */
+    max-height: 40%; /* Kuva ei ylitä tiettyä korkeutta */
     object-fit: contain; /* Säilyttää kuvan mittasuhteet eikä täytä aluetta */
-    margin-top: 20px; /* Lisää tilaa tekstin ja kuvan väliin */
+    margin-top: 10px; /* Lisää tilaa tekstin ja kuvan väliin */
 }
 
 .hero-text {
@@ -366,6 +366,7 @@ h1 {
         font-size: 1.5em; /* Vielä pienempi fonttikoko hyvin pienillä näytöillä */
     }
 }
+
 h4 {
     text-align: center !important;
     font-size: 32px;
