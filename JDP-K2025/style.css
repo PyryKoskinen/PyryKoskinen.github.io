@@ -310,30 +310,53 @@ h1 {
     position: relative;
     text-align: center;
     color: white;
-    overflow: hidden; 
+    overflow: hidden; /* Varmistaa, että kuva ei vuoda ulos */
+    height: 100vh; /* Hero-osan korkeus kattaa koko näytön */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-image {
-    width: 150%;
-    height: 100vh; 
-    object-fit: cover;
+    width: 100%; /* Täyttää koko hero-osan leveyden */
+    height: 100%; /* Täyttää koko hero-osan korkeuden */
+    object-fit: cover; /* Varmistaa, että kuva täyttää alueen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Asetetaan kuva taustalle */
 }
 
 .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 2.5em;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    white-space: nowrap; 
+    position: relative; /* Teksti on nyt hero-osan sisällä eikä mene kuvan yli */
+    z-index: 1; /* Varmistaa, että teksti on kuvan päällä */
+    padding: 20px; /* Lisää tilaa tekstin ympärille */
+    background-color: rgba(0, 0, 0, 0.5); /* Lisää taustan tekstin luettavuuden parantamiseksi */
+    border-radius: 10px; /* Pyöristetyt kulmat */
+}
+
+.hero-link {
+    color: white; /* Linkin väri valkoinen */
+    text-decoration: none; /* Poistaa alaviivan linkistä */
+}
+
+.hero-link:hover {
+    text-decoration: underline; /* Lisää alaviivan hover-tilassa */
 }
 
 /* Responsiivisuus pienemmillä näytöillä */
 @media (max-width: 768px) {
     .hero-text {
-        font-size: 2em; 
+        font-size: 2em; /* Pienempi fonttikoko mobiililaitteilla */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        font-size: 1.5em; /* Vielä pienempi fonttikoko hyvin pienillä näytöillä */
     }
 }
 
