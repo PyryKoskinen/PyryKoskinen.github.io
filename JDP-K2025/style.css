@@ -265,7 +265,7 @@ h1 {
 }
 
 .hero-image {
-    width: 100%;
+    width: 150%;
     height: 100vh; /* Kattaa koko näytön korkeuden */
     object-fit: cover; /* Varmistaa, että kuva täyttää alueen */
 }
