@@ -181,14 +181,14 @@ nav ul li a:hover {
 
 /* Logon muotoilu */
 .logo-box {
-    padding: 10px; /* Sama padding kuin muilla laatikoilla */
+    padding: 10px; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .nav-logo {
-    width: 90px; /* Tee logosta sopiva */
+    width: 90px; 
     height: auto;
 }
 
