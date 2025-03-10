@@ -302,6 +302,7 @@ a {
     text-decoration: none;
 }
 /* Otsikon tyylit */
+/* Otsikon tyylit */
 h1 {
     text-align: center;
     font-size: 32px;
@@ -315,6 +316,7 @@ h1 {
     overflow: hidden; /* Varmistaa, että kuva ei vuoda ulos */
     height: 100vh; /* Hero-osan korkeus kattaa koko näytön */
     display: flex;
+    flex-direction: column; /* Asetetaan sisältö pystysuoraan */
     align-items: center;
     justify-content: center;
     width: 100%; /* Varmistaa, että hero-osa täyttää koko leveyden */
@@ -324,13 +326,9 @@ h1 {
 
 .hero-image {
     max-width: 100%; /* Kuva ei ylitä hero-osan leveyttä */
-    max-height: 100%; /* Kuva ei ylitä hero-osan korkeutta */
+    max-height: 60%; /* Kuva ei ylitä tiettyä korkeutta */
     object-fit: contain; /* Säilyttää kuvan mittasuhteet eikä täytä aluetta */
-    position: absolute;
-    top: 50%; /* Siirtää kuvan alkuperäisen sijainnin yläreunan keskelle */
-    left: 50%; /* Siirtää kuvan alkuperäisen sijainnin vasemman reunan keskelle */
-    transform: translate(-50%, -50%); /* Keskitetään kuva */
-    z-index: -1; /* Asetetaan kuva taustalle */
+    margin-top: 20px; /* Lisää tilaa tekstin ja kuvan väliin */
 }
 
 .hero-text {
