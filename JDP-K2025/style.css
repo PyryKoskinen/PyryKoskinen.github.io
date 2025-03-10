@@ -262,8 +262,8 @@ h1 {
 }
 
 .hero-image {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Täyttää koko hero-osan leveyden */
+    height: 100%; /* Täyttää koko hero-osan korkeuden */
     object-fit: cover; /* Varmistaa, että kuva täyttää alueen */
     position: absolute;
     top: 0;
