@@ -1,43 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
-              <link rel="stylesheet" type="text/css" href="style.css" />
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Yhteystiedot</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-  <div class="header">
-  <h3>Header</h3>
-  <p>Lomaseikkailu vie sinut tutkimattomiin kohteisiin ja ainutlaatuisten elämysten äärelle.<br>
-    Tarjoamme erilaisia seikkailupaketteja – pieniä, normaaleja ja isoja – jokaisen seikkailijan rohkeustason mukaan. <br> 
-    Valitse omasi ja astu tuntemattomaan!
-  </p>
-</div>
     <nav>
-    <ul>
-      <li><a href="index.html">Etusivu</a></li>
-      <li><a href="lomakohteet.html">Lomakohteet</a></li>
-    </ul>
-  </nav>  
-  
-  <div class="container">
-        <form action="action_page.php">
+        <ul>
+            <li><img src="Logo.jpg" alt="Logo" class="nav-logo"></li>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="palvelut.html">Palvelut</a></li>
+            <li><a href="yhteystiedot.html" class="active">Yhteystiedot</a></li>
+        </ul>
+    </nav>
+</body>
+
+
+    <div class="contact-container">
+        <!-- Yhteystiedot vasemmalla -->
+        <div class="contact-info">
       
-          <label for="fname">Etunimi</label>
-          <input type="text" id="fname" name="Etunimi" placeholder="Etunimesi..">
-      
-          <label for="lname">Sukunimi</label>
-          <input type="text" id="lname" name="Sukunimi" placeholder="Sukunimesi..">
-      
-          <label for="subject">Viesti</label>
-          <textarea id="subject" name="subject" placeholder="Palautekentta.." style="height:200px"></textarea>
-      
-        </form>
-      </div>
-      
-     
-      
+            <h3>Yhteystiedot</h3>
+            <p><strong>📍 Osoite:</strong> Lomatie 10, 00100 Helsinki</p>
+            <p><strong>📞 Puhelin:</strong> +358 40 123 4567</p>
+            <p><strong>✉️ Sähköposti:</strong> info@lomaseikkailut.fi</p>
+        </div>
+
+        <!-- Lomake oikealla -->
+        <div class="contact-form">
+            <h2>Ota yhteyttä</h2>
+            <p>Jos sinulla on kysyttävää tai haluat ottaa yhteyttä, voit käyttää alla olevaa lomaketta.</p>
+            
+            <form action="action_page.php">
+                <input type="text" id="fname" name="Etunimi" placeholder="Nimi" required>
+                <input type="email" id="email" name="email" placeholder="Sähköposti" required>
+                <textarea id="message" name="message" placeholder="Kirjoita viestisi tähän..." rows="5" required></textarea>
+
+                <button type="submit" class="submit-btn">Lähetä</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <p>Copyright &copy; 2025, Lomaseikkailut Oy</p>
+        </div>
+    </footer>
 </body>
 </html>
