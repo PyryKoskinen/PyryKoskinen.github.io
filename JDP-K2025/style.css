@@ -256,12 +256,13 @@ h1 {
     position: relative;
     text-align: center;
     color: white;
+    overflow: hidden; /* Varmistaa, että kuva ei vuoda ulos */
 }
 
 .hero-image {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 100vh; /* Kattaa koko näytön korkeuden */
+    object-fit: cover; /* Varmistaa, että kuva täyttää alueen */
 }
 
 .hero-text {
@@ -272,4 +273,12 @@ h1 {
     font-size: 2.5em;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    white-space: nowrap; /* Estää tekstin rivittäytymisen */
+}
+
+/* Responsiivisuus pienemmillä näytöillä */
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 2em; /* Pienempi fonttikoko mobiililaitteilla */
+    }
 }
