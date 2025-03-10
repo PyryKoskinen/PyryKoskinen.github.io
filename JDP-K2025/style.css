@@ -288,3 +288,7 @@ h1 {
     }
 }
 
+h3 {
+    text-align: center !important;
+    font-size: 32px;
+}
