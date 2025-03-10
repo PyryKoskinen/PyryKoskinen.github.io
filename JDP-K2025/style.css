@@ -354,11 +354,6 @@ h1 {
     }
 }
 
-@media (max-width: 480px) {
-    .hero-text {
-        font-size: 1.5em; /* Vielä pienempi fonttikoko hyvin pienillä näytöillä */
-    }
-}
 
 h4 {
     text-align: center !important;
