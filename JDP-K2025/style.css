@@ -356,14 +356,7 @@ h1 {
     text-decoration: underline; /* Lisää alaviivan hover-tilassa */
 }
 
-/* Footerin tyylit */
-footer {
-    height: 100px; /* Oletetaan, että footer on 100px korkea */
-    background-color: #f1f1f1; /* Footerin taustaväri */
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px; /* Lisää tilaa hero-osan ja footerin väliin */
-}
+
 
 /* Responsiivisuus pienemmillä näytöillä */
 @media (max-width: 768px) {
