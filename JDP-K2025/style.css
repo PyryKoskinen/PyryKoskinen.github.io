@@ -301,10 +301,12 @@ h2 {
 a {
     text-decoration: none;
 }
+/* Otsikon tyylit */
 h1 {
     text-align: center;
     font-size: 32px;
 }
+
 /* Hero-osan tyylit */
 .hero-section {
     position: relative;
@@ -338,6 +340,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.5); /* Lisää taustan tekstin luettavuuden parantamiseksi */
     border-radius: 10px; /* Pyöristetyt kulmat */
     text-align: center; /* Varmistaa, että teksti on keskitetty */
+    width: 100%; /* Varmistaa, että teksti täyttää hero-osan leveyden */
 }
 
 .hero-link {
@@ -347,14 +350,6 @@ h1 {
 
 .hero-link:hover {
     text-decoration: underline; /* Lisää alaviivan hover-tilassa */
-}
-
-/* Footerin tyylit (pysyy ennallaan) */
-footer {
-    height: 100px; /* Oletetaan, että footer on 100px korkea */
-    background-color: #f1f1f1; /* Footerin taustaväri */
-    text-align: center;
-    padding: 20px;
 }
 
 /* Responsiivisuus pienemmillä näytöillä */
