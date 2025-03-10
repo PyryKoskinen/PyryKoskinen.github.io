@@ -325,10 +325,10 @@ h1 {
 }
 
 .hero-image {
-    max-width: 140%; /* Kuva ei ylitä hero-osan leveyttä */
-    max-height: 80%; /* Kuva ei ylitä tiettyä korkeutta */
+    max-width: 60%; /* Kuva ei ylitä hero-osan leveyttä */
+    max-height: 30%; /* Kuva ei ylitä tiettyä korkeutta */
     object-fit: contain; /* Säilyttää kuvan mittasuhteet eikä täytä aluetta */
-    margin-bottom: 10px; /* Lisää tilaa kuvan ja tekstin väliin */
+    margin-bottom: 5px; /* Lisää tilaa kuvan ja tekstin väliin */
 }
 
 .hero-text {
