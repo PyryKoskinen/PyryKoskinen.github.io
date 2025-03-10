@@ -340,7 +340,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.5); /* Lisää taustan tekstin luettavuuden parantamiseksi */
     border-radius: 10px; /* Pyöristetyt kulmat */
     text-align: center; /* Varmistaa, että teksti on keskitetty */
-    width: 100%; /* Varmistaa, että teksti täyttää hero-osan leveyden */
+    width: 50%; /* Varmistaa, että teksti täyttää hero-osan leveyden */
     margin: 0; /* Poistaa marginaalit */
 }
 
