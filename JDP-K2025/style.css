@@ -40,8 +40,6 @@ body {
 }
 
 .contact-info p {
-    margin: 20px 0;
-    font-size: 18px;
     text-align: left; /* Palautetaan vasemmalle */
     margin-left: 0;
     margin-right: 0;
@@ -62,8 +60,6 @@ body {
     text-align: left;
 }
 .contact-form p {
-    margin: 20px 0;
-    font-size: 18px;
     text-align: left; /* Palautetaan vasemmalle */
     margin-left: 0;
     margin-right: 0;
