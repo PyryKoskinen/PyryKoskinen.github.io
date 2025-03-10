@@ -218,9 +218,7 @@ p { /*Asetetaan elementti keskelle ruutua ja elementin leveys on 60% sivusta*/
     margin-left: auto;
     margin-right: auto;
 }
-h1 { /*asetetaan h1 keskellä ja väli alempaan elementtiin*/
-    text-align: center;
-    margin-bottom: 10px;
+
 }
 
 h2 { /*sama kun h1*/
